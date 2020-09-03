@@ -8,17 +8,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/01e7a34cf1.js" crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
     <title>Zakład Stomatologiczny</title>
 </head>
 
 <body>
-    <nav>
+    <header>
+
         <div class="logo"><a href="#"><img class="logo-img" src="./img/logo.png"></a></div>
         <div class="nr-tele"><i class="fas fa-phone"></i> +48 523 678 341</div>
         <div class="mail"><a href="#"><i class="fas fa-envelope"></i> mail@mail.pl</a></div>
-        <div class="main-menu">Menu</div>
-    </nav>
+        <div class="menu-btn"><label for="toggle"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle">
+            <nav class="nav-menu">
+                <div class="menu ofer"><a href="#">Oferta</a></div>
+                <div class="menu equipment"><a href="#">Wyposażenie</a></div>
+                <div class="menu price-list"><a href="#">Cennik</a></div>
+                <div class="menu about-us"><a href="#">O nas</a></div>
+                <div class="menu career"><a href="#">Kariera</a></div>
+                <div class="menu contakt"><a href href="#">Kontakt</a></div>
+            </nav>
+        </div>
+    </header>
     <main>
         <div class="pic">
             <div class="slogan">Witamy z Gabinecie stomatologicznym. Zadbamy o Twój uśmiech.</div>
@@ -54,7 +65,7 @@
                 <li><a href="#">Mikrosilnik endodontyczny X-Smart</a></li>
             </ul>
         </div>
-        <div class="foot kontakt">
+        <div class="foot contakt">
             <h3>Kontakt</h3>
             <ul>
                 <li>+48 523 678 341</li>
