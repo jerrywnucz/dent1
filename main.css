@@ -67,7 +67,21 @@ header {
 /*Slider z obraazkami i napisami*/
 main {
   margin-top: 3rem;
+   
+}
+
+.slider {
+  display: flex;
+  position: relative;
   overflow: hidden;
+}
+.slider img{
+  object-fit: cover;
+  min-width: 100vw;
+  height: 95vh;
+  object-position: center;
+  animation: animate 60s infinite;
+  opacity: 0.8;
 }
 .text-slider {
   position: absolute;
@@ -78,18 +92,6 @@ main {
   color: azure;
   text-shadow: 0 0 7px black;
   text-align: center;
-}
-.slider {
-  display: flex;
-  width: 100vw;
-  position: relative;
-}
-.slider img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  animation: animate 60s infinite;
-  opacity: 0.9;
 }
 
 footer {
