@@ -5,24 +5,25 @@
   text-decoration: none;
 }
 :root {
-  --nav-bg-color: rgba(88, 85, 85, 1);
+  --nav-bg-color: rgba(88, 85, 85, 0.95);
   --logo-color: rgb(209, 211, 212);
   --text-color: rgb(231, 231, 231);
   --text-color-hover: rgb(177, 177, 177);
 }
 body {
   font-family: "Lato", sans-serif;
-  overflow: hidden;
 }
 /*górny pasek navigacyjny z goiem i hamburgerem*/
-header {
-}
+
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 3rem;
+  width: 100%;
   background: var(--nav-bg-color);
+  position: fixed;
+  z-index: 1;
 }
 .nav__logo {
   width: 2rem;
@@ -37,8 +38,8 @@ header {
 }
 
 .nav__menu {
-  position: absolute;
-  right: 0px;
+  position: fixed;
+  right: 0;
   height: 95vh;
   top: 3rem;
   width: 30%;
@@ -49,12 +50,11 @@ header {
   align-items: center;
   transform: translateX(100%);
   transition: all 0.5s ease-in-out;
-  z-index: 2;
+  z-index: 1;
 }
 /* transition of slide menu*/
 .nav__menu--slide {
   transform: translateX(0);
-  z-index: 2;
 }
 
 .nav__menu__link {
@@ -92,16 +92,14 @@ main {
   display: flex;
   position: relative;
   overflow: hidden;
-  z-index: -1;
 }
 .slider img {
   object-fit: cover;
   min-width: 100vw;
-  height: 95vh;
+  height: 100vh;
   object-position: center;
   animation: animate 60s infinite;
   opacity: 0.8;
-  z-index: -1;
 }
 .text-slider {
   position: absolute;
@@ -112,7 +110,6 @@ main {
   color: var(--text-color);
   text-shadow: 0 0 7px black;
   text-align: center;
-  z-index: -1;
 }
 /*Slider with pic END*/
 
