@@ -53,6 +53,7 @@ body {
 /* transition of slide menu*/
 .nav__menu--slide {
   transform: translateX(0);
+  z-index: 2;
 }
 
 .nav__menu__link {
@@ -75,6 +76,7 @@ body {
 .nav__burger:hover {
   color: var(--text-color-hover);
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 .nav__burger--dark {
@@ -89,6 +91,7 @@ main {
   display: flex;
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 .slider img {
   object-fit: cover;
@@ -97,6 +100,7 @@ main {
   object-position: center;
   animation: animate 60s infinite;
   opacity: 0.8;
+  z-index: -1;
 }
 .text-slider {
   position: absolute;
@@ -107,7 +111,7 @@ main {
   color: var(--text-color);
   text-shadow: 0 0 7px black;
   text-align: center;
-  z-index: 1;
+  z-index: -1;
 }
 /*Slider with pic END*/
 
